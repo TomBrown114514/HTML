@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "ºÙ÷Ω";
+    src: url("jianzhi.ttf");
+}
+
+h1 {
+    font-family: "ºÙ÷Ω", serif;
+}
+
+a.blue {
+    color: blue;
+}
+
+p a {
+    color: red;
+}
+
+a.red {
+    font-size: 40px;
+}
+
+h1, p.img {
+    text-align: center;
+}
