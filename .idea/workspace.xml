@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e9cc8c43-e5cb-4d20-95c5-2af458c40143" name="变更" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2LdUxkpSXR2i4iEpjeemUol2hW9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/JETBRAINS/QD/HTML/23.3/23.3.21/1",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\JETBRAINS\QD\HTML\23.3\23.3.21\1" />
+      <recent name="E:\JETBRAINS\QD\HTML\23.3\23.3.13\1" />
+      <recent name="E:\JETBRAINS\QD\HTML\23.3.13" />
+      <recent name="E:\JETBRAINS\QD\HTML\23.2.28\HTML百科" />
+      <recent name="E:\JETBRAINS\QD\HTML\23.2.27" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\JETBRAINS\QD\HTML\23.3\23.3.21\1" />
+      <recent name="E:\JETBRAINS\QD\HTML\23.3" />
+      <recent name="E:\JETBRAINS\QD\HTML\23.2" />
+      <recent name="E:\JETBRAINS\QD\HTML\23.3.13\1\images" />
+      <recent name="E:\JETBRAINS\QD\HTML\23.2.28\HTML百科" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="e9cc8c43-e5cb-4d20-95c5-2af458c40143" name="变更" comment="" />
+      <created>1676200705542</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676200705542</updated>
+      <workItem from="1676200706107" duration="4850000" />
+      <workItem from="1676208706758" duration="953000" />
+      <workItem from="1676247520418" duration="2859000" />
+      <workItem from="1676277095634" duration="3056000" />
+      <workItem from="1676285685344" duration="4119000" />
+      <workItem from="1676360889908" duration="5002000" />
+      <workItem from="1676372267802" duration="2318000" />
+      <workItem from="1676375766389" duration="467000" />
+      <workItem from="1676376483821" duration="374000" />
+      <workItem from="1676381514131" duration="1278000" />
+      <workItem from="1676451360119" duration="73000" />
+      <workItem from="1676820510001" duration="43000" />
+      <workItem from="1676820574658" duration="676000" />
+      <workItem from="1676939805205" duration="4664000" />
+      <workItem from="1676965321739" duration="1616000" />
+      <workItem from="1676966975752" duration="2996000" />
+      <workItem from="1676970250061" duration="30000" />
+      <workItem from="1676977351812" duration="320000" />
+      <workItem from="1676977811344" duration="186000" />
+      <workItem from="1676990030049" duration="807000" />
+      <workItem from="1677478065344" duration="4269000" />
+      <workItem from="1677570703186" duration="3175000" />
+      <workItem from="1677577911089" duration="1285000" />
+      <workItem from="1677658880120" duration="618000" />
+      <workItem from="1678082277516" duration="1150000" />
+      <workItem from="1678084327010" duration="3080000" />
+      <workItem from="1678688816672" duration="3691000" />
+      <workItem from="1678797387458" duration="436000" />
+      <workItem from="1678811529505" duration="1166000" />
+      <workItem from="1678874477526" duration="1996000" />
+      <workItem from="1679292110599" duration="2668000" />
+      <workItem from="1679384238145" duration="362000" />
+      <workItem from="1679385365495" duration="2311000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
