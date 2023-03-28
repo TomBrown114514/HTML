@@ -1,0 +1,73 @@
+/* 选择器 */
+/* charset: utf-8 */
+
+ul {
+    width: 500px;
+    height: 50px;
+    border: 1px dashed #F00; /* 红色虚线 */
+    background-color: #606; /* 背景色为深灰色 */
+    margin: 10px auto; /* 自动居中 */
+}
+
+li {
+    list-style: none; /* 去掉列表前面的小圆点 */
+    float: left; /* 左浮动 */
+    width: 40px;
+    text-align: center;
+    line-height: 40px; /* 设置行高 */
+    border: 1px solid #F00; /* 红色实线 */
+    border-radius: 50%; /* 圆角 */
+    margin-right: 5px; /* 外边距 */
+    background-color: skyblue; /* 背景色为天蓝色 */
+}
+
+ul > li[class="six" /* 选择class属性值为six的li元素 */ ] {
+    background-color: black;
+    color: white;
+}
+
+li[class="six"]+li /* 选择class属性值为six的li元素后面的第一个li元素 */ {
+    background-color: gold;
+}
+
+li[class="six"]~* /* 选择class属性值为six的li元素后面的所有元素 */ {
+    border: #f00 1px solid; /* 红色实线 */
+}
+
+#one {
+    background-color: #0C6; /* 背景色为深绿色 */
+}
+
+.two {
+    background-color: #00F; /* 背景色为蓝色 */
+}
+
+li[id="one"] {
+    font-weight: bold; /* 加粗 */
+    color: red; /* 字体颜色为红色 */
+}
+
+li[class] /* 选择所有有class属性的li元素 */ {
+    font-size: 30px; /* 字体大小为30px */
+}
+
+li[class^="three"] /* 选择class属性值以three开头的li元素 */{
+    background-color: red; /* 背景色为红色 */
+}
+
+li[class$="four"] /* 选择class属性值以four结尾的li元素 */ {
+    background-color: white; /* 背景色为白色 */
+}
+
+li[class*="five"] /* 选择class属性值中包含five的li元素 */ {
+    background-color: yellow; /* 背景色为黄色 */
+}
+
+li[class*="two"] {
+    color: pink; /* 字体颜色为粉红色 */
+}
+
+body ul li a /* 选择body元素下的ul元素下的li元素下的a元素 */{
+    text-decoration: none; /* 去掉超链接的下划线 */
+    font-size: 40px; /* 字体大小为40px */
+}
