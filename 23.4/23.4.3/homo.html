@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>唐诗欣赏</title>
+    <style>
+        /* 将所有的标签的默认样式清除 */
+        * {
+            margin: 0; /* 将所有标签的外边距清除 */
+            padding: 0; /* 将所有标签的内边距清除 */
+        }
+
+        p {
+            text-align: center; /* 将所有的p标签的文本居中 */
+            font-family: "微软雅黑"; /* 设置字体为微软雅黑 */
+            height: 30px; /* 设置p标签的高度为30px */
+            line-height: 30px; /* 设置p标签的行高为30px */
+        }
+
+        .demo {
+            width: 500px; /* 设置demo的宽度 */
+            height: 350px; /* 设置demo的高度 */
+            background-color: #0C9; /* 设置demo的背景颜色为深蓝色 */
+            margin: 10px auto; /* 设置demo的外边距，使其居中 */
+        }
+
+        .tabs {
+            width: 500px; /* 设置tabs的宽度为500px */
+            height: 50px; /* 设置tabs的高度为50px */
+            line-height: 50px; /* 设置tabs的行高为50px */
+        }
+
+        .content {
+            width: 500px;
+            height: 300px;
+        }
+
+        .tabs li {
+            list-style: none;
+            float: left;
+            width: 150px;
+            text-align: center;
+        }
+
+        #tab1:target, #tab2:target, #tab3:target { /* 对于被选中的标签，设置其背景颜色为浅蓝色 */
+            display: block;
+            background: #CCC;
+        }
+
+        #tab1, #tab2, #tab3 {
+            display: none; /* none 指的是显示方式，none表示不显示 */
+        }
+
+    </style>
+</head>
+<body>
+<h1 align="center">唐诗欣赏</h1>
+<div class="demo">
+    <ul class="tabs">
+        <li><a href="#tab1">月下独酌</a></li>
+        <li><a href="#tab2">独坐敬亭山</a></li>
+        <li><a href="#tab3">望天门山</a></li>
+    </ul>
+    <div id="tab1" class="content">
+        <p>花间一壶酒，独酌无相亲。</p>
+        <p>举杯邀明月，对影成三人。</p>
+        <p>月既不解饮，影徒随我身。</p>
+        <p>暂伴月将影，行乐须及春。</p>
+        <p>我歌月徘徊，我舞影凌乱。</p>
+        <p>醒时同交欢，醉后各分散。</p>
+        <p>永结无情游，相期邈云汉。</p>
+    </div>
+    <div id="tab2" class="content">
+        <p>众鸟高飞尽，</p>
+        <p>孤云独去闲。</p>
+        <p>相看两不厌，</p>
+        <p>唯有敬亭山。</p>
+    </div>
+    <div id="tab3" class="content">
+        <p>天门中断楚江开，</p>
+        <p>碧水东流至此回。</p>
+        <p>两岸青山相对出，</p>
+        <p>孤帆一片日边来。</p>
+    </div>
+</div>
+</body>
+</html>
