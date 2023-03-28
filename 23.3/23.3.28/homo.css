@@ -26,11 +26,13 @@ ul > li[class="six" /* 选择class属性值为six的li元素 */ ] {
     color: white;
 }
 
-li[class="six"]+li /* 选择class属性值为six的li元素后面的第一个li元素 */ {
+li[class="six"] + li /* 选择class属性值为six的li元素后面的第一个li元素 */
+{
     background-color: gold;
 }
 
-li[class="six"]~* /* 选择class属性值为six的li元素后面的所有元素 */ {
+li[class="six"] ~ * /* 选择class属性值为six的li元素后面的所有元素 */
+{
     border: #f00 1px solid; /* 红色实线 */
 }
 
@@ -47,19 +49,23 @@ li[id="one"] {
     color: red; /* 字体颜色为红色 */
 }
 
-li[class] /* 选择所有有class属性的li元素 */ {
+li[class] /* 选择所有有class属性的li元素 */
+{
     font-size: 30px; /* 字体大小为30px */
 }
 
-li[class^="three"] /* 选择class属性值以three开头的li元素 */{
+li[class^="three"] /* 选择class属性值以three开头的li元素 */
+{
     background-color: red; /* 背景色为红色 */
 }
 
-li[class$="four"] /* 选择class属性值以four结尾的li元素 */ {
+li[class$="four"] /* 选择class属性值以four结尾的li元素 */
+{
     background-color: white; /* 背景色为白色 */
 }
 
-li[class*="five"] /* 选择class属性值中包含five的li元素 */ {
+li[class*="five"] /* 选择class属性值中包含five的li元素 */
+{
     background-color: yellow; /* 背景色为黄色 */
 }
 
@@ -67,7 +73,8 @@ li[class*="two"] {
     color: pink; /* 字体颜色为粉红色 */
 }
 
-body ul li a /* 选择body元素下的ul元素下的li元素下的a元素 */{
+body ul li a /* 选择body元素下的ul元素下的li元素下的a元素 */
+{
     text-decoration: none; /* 去掉超链接的下划线 */
     font-size: 40px; /* 字体大小为40px */
 }
