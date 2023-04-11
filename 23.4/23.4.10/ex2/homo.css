@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+}
+
+ul {
+    padding: 10px;
+    border: purple 10px solid;
+    list-style: none;
+    width: 250px;
+    align-content: center;
+}
+
+.time {
+    padding: 10px;
+    color: purple;
+}
+
+.clubs, .return {
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    margin: 10px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    color: #333333;
+}
