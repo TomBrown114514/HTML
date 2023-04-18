@@ -1,0 +1,184 @@
+(1) 内边距 —— padding，边框与内容之间的空白区域
+在CSS中，padding属性用于设置元素的内边距，即元素内容和边框之间的空白区域。
+内边距可以使元素的内容与其边框分开，从而更容易地被用户看到。内边距是透明的，因此它们不会遮挡背景色。
+
+格式：
+1. padding: 上边距 右边距 下边距 左边距;
+2. padding: 上边距 下边距 左边距;
+3. padding: 上下边距 左右边距;
+4. padding: 上下左右边距;
+
+属性：
+padding-top: 上边距;
+padding-right: 右边距;
+padding-bottom: 下边距;
+padding-left: 左边距;
+auto: 自动计算内边距，使元素的宽度等于父元素的宽度减去左右边框的宽度和左右内边距的宽度。
+如果把左右边距设置为auto，那么就可以使元素水平居中。
+一般情况下，如果把元素水平居中，一般把上下边距设为10px，左右边距设为auto。
+
+由于网页自身也有内边距和外边距，以下CSS代码可以清除网页的内边距和外边距：
+（默认宽度应该是0，但是由于不同的浏览器对于默认值的处理不同，所以最好还是写上）
+* {
+    padding: 0; /* 清除网页的内边距 */
+    margin: 0; /* 清除网页的外边距 */
+}
+
+盒子模型的长 = width + padding-left + padding-right + border-left + border-right
+（宽度 + 左内边距 + 右内边距 + 左边框 + 右边框）
+盒子模型的宽 = height + padding-top + padding-bottom + border-top + border-bottom
+（高度 + 上内边距 + 下内边距 + 上边框 + 下边框）
+
+相关设置方法：
+padding: 10px 20px 30px 40px; /* 上右下左 */
+padding: 10px 20px 30px; /* 上右下 左 */
+padding: 10px 20px; /* 上下 左右 */
+padding: 10px; /* 上下左右 */
+
+padding-top: 10px; /* 上边距 */
+padding-right: 10px; /* 右边距 */
+padding-bottom: 10px; /* 下边距 */
+padding-left: 10px; /* 左边距 */
+
+也可以使用百分比
+padding: 10% 20% 30% 40%; /* 上右下左 */
+padding: 10% 20% 30%; /* 上右下 左 */
+padding: 10% 20%; /* 上下 左右 */
+padding: 10%; /* 上下左右 */
+
+当使用百分比的时候，实际上是相对于元素的宽度来计算的，而不是相对于父元素的宽度。
+上面的10%就是指元素的宽度的10%。
+
+padding-top: 10%; /* 上边距 */
+padding-right: 10%; /* 右边距 */
+padding-bottom: 10%; /* 下边距 */
+padding-left: 10%; /* 左边距 */
+
+box-shadow属性：
+在CSS3中，box-shadow属性用于设置元素的阴影。基本语法格式如下：
+box-shadow: <像素值1> <像素值2> <像素值3> <像素值4> <颜色值> <阴影类型>;
+|参数值|说明|
+|:---|:---|
+|像素值1|阴影的水平偏移量,正值表示向右偏移，负值表示向左偏移|
+|像素值2|阴影的垂直偏移量,正值表示向下偏移，负值表示向上偏移|
+|像素值3|阴影的模糊半径|
+|像素值4|阴影的扩展半径|
+|颜色值|阴影的颜色|
+|阴影类型|阴影的类型，取值为inset或outset，inset表示内阴影，outset表示外阴影，默认为outset|
+
+box-sizing属性：
+在CSS3中，box-sizing属性用于定义盒子的宽度值和高度值的计算方式。基本语法格式如下：
+box-sizing: <计算方式>;（取值为content-box或border-box）
+|参数值|说明|
+|:---|:---|
+|content-box|默认值，表示宽度值和高度值只包含内容的宽度和高度，不包含内边距和边框的宽度和高度|
+|border-box|表示宽度值和高度值包含内容的宽度和高度，内边距和边框的宽度和高度|
+
+----------------------
+
+(2) 背景 —— background，元素的背景
+在CSS中，background属性用于设置元素的背景，包括背景颜色、背景图片、背景位置、背景重复等。
+
+1. 背景颜色 —— background-color
+格式：
+background-color: <颜色值>;
+其中颜色值可以是十六进制值（例如#ff0000），也可以是RGB值（例如rgb(255,0,0)），
+也可以是颜色名称（例如red）。
+RGB值可以添加透明度，例如rgba(255,0,0,0.5)，其中0.5表示透明度为50%。
+比如：
+:root {
+    background-color: #ff0000; /* 设置根元素的背景颜色为红色 */
+}
+
+2. 背景图片 —— background-image
+格式：
+background-image: url(<图片路径>);
+其中图片路径可以是相对路径，也可以是绝对路径。
+比如：
+:root {
+    background-image: url(./images/bg.jpg); /* 设置根元素的背景图片 */
+}
+
+背景图片的填充方式：
+background-repeat属性用于设置背景图片的填充方式，取值为repeat、repeat-x、repeat-y、no-repeat。
+repeat表示背景图片在水平和垂直方向上都重复填充。（默认值）
+repeat-x表示背景图片在水平方向上重复填充，垂直方向上不重复填充。
+repeat-y表示背景图片在垂直方向上重复填充，水平方向上不重复填充。
+no-repeat表示背景图片在水平和垂直方向上都不重复填充。（位于背景图片的左上角，而且只显示一次）
+比如：
+:root {
+    background-image: url(./images/bg.jpg); /* 设置根元素的背景图片 */
+    background-repeat: no-repeat; /* 设置背景图片的填充方式为不重复填充 */
+}
+当背景颜色和背景图片同时设置时，背景图片会覆盖背景颜色。
+比如：
+a {
+    background-color: #ff0000; /* 设置a元素的背景颜色为红色 */
+    background-image: url(./images/bg.jpg); /* 设置a元素的背景图片 */
+}
+此时，a元素的背景颜色就会被背景图片覆盖。
+
+opacity属性：
+在CSS3中，opacity属性用于设置元素的透明度，取值为0-1之间的小数，其中0表示完全透明，1表示完全不透明。
+比如，设置背景图片的透明度为50%：
+:root {
+    background-image: url(./images/bg.jpg); /* 设置根元素的背景图片 */
+    background-repeat: no-repeat; /* 设置背景图片的填充方式为不重复填充 */
+    opacity: 0.5; /* 设置背景图片的透明度为50% */
+}
+
+设置图片位置的属性：
+background-position属性用于设置背景图片的位置，取值为像素值或百分比。
+比如，设置背景图片的位置为距离左边100px，距离上边100px：
+:root {
+    background-image: url(./images/bg.jpg); /* 设置根元素的背景图片 */
+    background-repeat: no-repeat; /* 设置背景图片的填充方式为不重复填充 */
+    background-position: 100px 100px; /* 设置背景图片的位置为距离左边100px，距离上边100px */
+}
+也可以使用预定义的关键字，比如：
+水平：left、center、right（左、中、右）
+垂直：top、center、bottom（上、中、下）
+若只有一个值则另一个值默认为center。例如：
+center -> center center
+还可以使用百分比
+- 0% 0% 表示左上角
+- 50% 50% 表示中间
+- 20% 30% 表示距离左边20%，距离上边30%
+- 100% 100% 表示右下角
+如果只设置一个值，则另一个值默认为50%。
+例如：
+:root {
+    background-image: url(./images/bg.jpg); /* 设置根元素的背景图片 */
+    background-repeat: no-repeat; /* 设置背景图片的填充方式为不重复填充 */
+    background-position: 20% 30%; /* 设置背景图片的位置为距离左边20%，距离上边30% */
+}
+
+background-attachment属性：（背景图片是否固定）
+background-attachment属性用于设置背景图片是否固定，取值为scroll或fixed。
+scroll表示背景图片随着页面的滚动而滚动。
+fixed表示背景图片固定不动。
+比如：
+:root {
+    background-image: url(./images/bg.jpg); /* 设置根元素的背景图片 */
+    background-repeat: no-repeat; /* 设置背景图片的填充方式为不重复填充 */
+    background-position: 20% 30%; /* 设置背景图片的位置为距离左边20%，距离上边30% */
+    background-attachment: fixed; /* 设置背景图片固定不动 */
+}
+上述可以使用一条语句来设置：
+:root {
+    background: url(./images/bg.jpg) no-repeat 20% 30% fixed; /* 设置根元素的背景图片 */
+}
+顺序：background =
+background-color（背景颜色）
+background-image（背景图片）
+background-repeat （背景图片的填充方式）
+background-attachmen （背景图片是否固定）
+background-position （背景图片的位置）
+设置多重背景：
+background属性可以设置多重背景，多重背景之间用逗号隔开。
+比如：
+:root {
+    background: url(./images/bg.png) no-repeat 20% 30%, url(./images/bg2.png) no-repeat 50% 50%; /* 设置根元素的背景图片 */
+}
+背景图片的顺序是从右到左，从下到上。后面的背景图片会在下方显示。
+注意：必须是透明的图片才能看到下面的背景图片。(一般是png格式的图片)

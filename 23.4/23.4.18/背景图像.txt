@@ -1,0 +1,65 @@
+一、设置背景图像的大小
+在CSS3中，我们可以使用background-size属性来设置背景图像的大小。这个属性有两个值，一个是width，一个是height。
+这两个值都可以是像素值，也可以是百分比。
+如果只设置一个值，另一个值会自动调整。
+如果设置的值比背景图像的实际大小要大，那么背景图像会被拉伸，如果设置的值比背景图像的实际大小要小，那么背景图像会被缩小。
+如果设置的值是百分比，那么背景图像的大小会根据父元素的大小来调整。
+下面的例子中，我们设置了背景图像的宽度为100px，高度为50px。由于背景图像的实际大小是200px*100px，所以背景图像会被缩小。
+/*设置背景图像的大小*/
+div{
+    width:200px;
+    height:100px;
+    background:url(../images/1.jpg) no-repeat;
+    background-size:100px 50px;
+}
+如果仅仅设置了一个值，另一个值会自动调整。下面的例子中，我们只设置了背景图像的宽度为100px，高度会自动调整。
+/*设置背景图像的大小*/
+div{
+    width:200px;
+    height:100px;
+    background:url(../images/1.jpg) no-repeat;
+    background-size:100px;
+}
+对于cover和contain这两个值，我们可以这样理解：
+cover：背景图像会被拉伸，以填充整个元素。就是把背景图像拉伸到和元素一样大。
+contain：背景图像会被缩小，以适应整个元素。
+
+二、设置背景图像的位置
+在CSS3中，我们可以使用background-position属性来设置背景图像的位置。这个属性有两个值，一个是x轴的位置，一个是y轴的位置。
+这两个值都可以是像素值，也可以是百分比。
+如果只设置一个值，另一个值会自动调整。
+如果设置的值比背景图像的实际大小要大，那么背景图像会被拉伸，如果设置的值比背景图像的实际大小要小，那么背景图像会被缩小。
+如果设置的值是百分比，那么背景图像的大小会根据父元素的大小来调整。
+下面的例子中，我们设置了背景图像的x轴位置为100px，y轴位置为50px。由于背景图像的实际大小是200px*100px，所以背景图像会被缩小。
+/*设置背景图像的位置*/
+div{
+    width:200px;
+    height:100px;
+    background:url(../images/1.jpg) no-repeat;
+    background-position:100px 50px;
+}
+
+对于background-origin和background-clip这两个属性，我们可以这样理解：
+background-origin：设置背景图像的原点位置。
+这个有四个值，分别是padding-box、border-box、content-box和initial。
+其中padding-box是默认值，表示背景图像的原点在padding的左上角。
+border-box表示背景图像的原点在border的左上角。
+content-box表示背景图像的原点在content(内容)的左上角。
+initial表示背景图像的原点在元素的左上角。
+
+background-clip：设置背景图像的裁剪区域。
+这有三个值，分别是border-box、padding-box和content-box。
+其中border-box是默认值，表示背景图像的裁剪区域是border。
+padding-box表示背景图像的裁剪区域是padding。
+content-box表示背景图像的裁剪区域是content(内容)。
+
+背景符合属性：
+background:
+[background-color] (背景颜色)
+[background-image] (背景图像)
+[background-repeat] (背景图像的重复方式)
+[background-attachment] (背景图像是否固定或者随着页面的其余部分滚动)
+[background-position] (背景图像的位置)
+[background-size] (背景图像的大小)
+[background-clip] (背景图像的裁剪区域)
+[background-origin] (背景图像的原点位置)
