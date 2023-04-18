@@ -1,0 +1,33 @@
+div {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: left;
+    margin: 0 20px;
+}
+
+.one {
+    background-image: linear-gradient(to right, red, orange, yellow, green,
+    blue, indigo, violet);
+}
+
+.two {
+    background-image: radial-gradient(ellipse at center, #0f0, #030);
+}
+
+.three {
+    background-image: radial-gradient(circle at right top, #fff, #fff 20px, transparent 21px),
+    radial-gradient(circle at right bottom, #fff, #fff 20px, transparent 21px),
+    radial-gradient(circle at left top, #fff, #fff 20px, transparent 21px),
+    radial-gradient(circle at left bottom, #fff, #fff 20px, transparent 21px);
+    background-color: red;
+    border-radius: 0;
+}
+
+.four {
+    background-image: repeating-linear-gradient(90deg, #E50743, #E8ED30 10%, #3FA62E 15%);
+}
+
+.five {
+    background-image: repeating-radial-gradient(circle at 50% 50%, #E50743, #E8ED30 10%, #3FA62E 15%, transparent 21px);
+}

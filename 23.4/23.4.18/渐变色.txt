@@ -1,0 +1,30 @@
+CSS渐变颜色
+
+1. 线性渐变
+在线性渐变中，颜色从起始点开始沿着一条线渐变到结束点。这条线可以是水平的、垂直的或者是任意角度的。线性渐变的语法如下：
+background: linear-gradient(direction, color-stop1, color-stop2, ...);
+direction: 渐变的方向，可以是角度，也可以是关键字。
+如果是角度，那么0deg表示朝上，90deg表示朝右，180deg表示朝下，270deg表示朝左。
+如果是关键字，那么可以是to top、to right、to bottom、to left、to top right、to bottom right、to bottom left、to top left。
+如果省略了方向，那么默认是从左到右。
+在指定角度的时候，也可以指定位置，例如：
+background: linear-gradient(45deg, red 50%, blue 80%);
+/* 朝右上角渐变，红色占50%，蓝色占80% */
+background: linear-gradient(red 50%, blue 80%);
+/* 从上到下渐变，红色占50%，蓝色占80% */
+
+2. 径向渐变
+径向渐变是从一个圆心开始，沿着一个圆形渐变到另一个圆心。径向渐变的语法如下：
+background: radial-gradient(shape size at position, start-color, ..., last-color);
+1. sharp(形状): 圆形或者椭圆形，可以是circle或者ellipse。
+2. size(尺寸):(像素值/百分比) 圆的大小，用于定义形状的水平半径和垂直半径。
+如"80px 50px" 表示水平半径为80px，垂直半径为50px的椭圆形。
+3. at(位置): 圆心的位置，可以是关键字，也可以是像素值或者百分比。
+像素/百分比：圆心的位置，相对于渐变区域的左上角。
+关键字：圆心的位置，可以是
+left(设置左边为径向渐变的横坐标的值)、
+center、
+right、
+top、
+bottom、
+
