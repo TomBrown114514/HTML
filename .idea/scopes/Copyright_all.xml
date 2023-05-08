@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Copyright all" pattern="file[HTML]:*.html/" />
+</component>
