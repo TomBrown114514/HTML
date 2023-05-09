@@ -1,0 +1,98 @@
+@charset "utf-8";
+/*
+ * 作者：张荣翔 时间：2023-5-9 版权所有
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+body {
+    font-family: "微软雅黑", serif;
+}
+
+.all {
+    width: 650px;
+    height: 400px;
+    margin: 20px auto;
+    background: #1E2D38
+}
+
+.left {
+    width: 300px;
+    height: 340px;
+    background: url("images/road.png") no-repeat 80px top;
+    float: left;
+    position: relative;
+}
+
+.right {
+    width: 300px;
+    height: 340px;
+    padding-top: 60px;
+    float: right;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.one {
+    width: 158px;
+    height: 177px;
+    background: url("images/icon1.png") no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 132px;
+}
+
+.two {
+    width: 98px;
+    height: 106px;
+    background: url("images/icon3.png") no-repeat;
+    position: absolute;
+    left: 250px;
+    top: 129px;
+}
+
+.three {
+    width: 69px;
+    height: 78px;
+    background: url("images/icon5.png") no-repeat;
+    position: absolute;
+    left: 142px;
+    top: 11px;
+}
+
+.four {
+    width: 45px;
+    height: 50px;
+    background: url("images/icon7.png") no-repeat;
+    position: absolute;
+    left: 238px;
+    top: 7px;
+}
+
+.one:hover {
+    background: url("images/icon2.png") no-repeat;
+}
+.two:hover {
+    background: url("images/icon4.png") no-repeat;
+}
+.three:hover {
+    background: url("images/icon6.png") no-repeat;
+}
+.four:hover {
+    background: url("images/icon8.png") no-repeat;
+}
+.right h2 {
+    font-size: 88px;
+    color: #3f9ade;
+}
+
+.right .txt {
+    font-size: 18px;
+    color:#55606b;
+    margin-bottom: 20px;
+}
