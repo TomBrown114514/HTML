@@ -1,0 +1,53 @@
+/*
+ * 作者：张荣翔 时间：2023-5-22 版权所有
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    width: 400px;
+    height: 310px;
+    background: url("bg.jpg");
+    margin: 500px auto;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.list p {
+    height: 40px;
+    line-height: 40px;
+    font-family: "微软雅黑", sans-serif;
+    font-size: 16px;
+}
+
+.list input.txt {
+    background: #438E11;
+    height: 20px;
+    border: 2px solid #FFF;
+    color: #FFF;
+}
+
+.list input.btn{
+    background: #FC0;
+    height: 25px;
+    border: 2px solid #FFF;
+    color: #000;
+    width: 80px;
+}
+
+.homo {
+    text-align: center;
+    color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* 添加背景色以避免内容被遮挡 */
+}
+
+
+
+

@@ -1,0 +1,51 @@
+<!--
+  ~ 作者：张荣翔 时间：2023-5-22 版权所有
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="1.css" type="text/css" rel="stylesheet">
+    <script src="1.js"></script>
+</head>
+<body>
+<form action="#" method="post" name="form1" target="_blank" class="list" id="myForm">
+    <h1>学生信息调查表</h1>
+    <div>
+        <label style="color: red">*</label>用户名：
+        <input type="text" maxlength="20" class="txt" value="张三" id="username"/><label id="error-msg"></label>
+    </div>
+    <p>
+        <label style="color: red">*</label>
+        密码：<input type="password" name="password" id="password" size="20" maxlength="18" class="txt"><label id="password-msg"></label>
+    </p>
+    <p>
+        性别：
+        <input type="radio" name="sex" checked> 男
+        <input type="radio" name="sex"> 女
+    </p>
+    <p>
+        兴趣：
+        <input type="checkbox"/> 唱歌
+        <input type="checkbox"/> 跳舞
+        <input type="checkbox"/> 游泳
+    </p>
+    <p>
+        上传头像：
+        <input type="file" class="txt" id="check_is_image">
+    </p>
+    <p>
+        <input type="submit" value="提交" class="btn" id="submit">
+        <input type="reset" value="重置" class="btn" id="reset">
+        <input type="button" value="普通按钮" class="btn">
+        <input type="hidden" name="hidden" id="hiddenField" value="kk">
+    </p>
+</form>
+</body>
+<div class="homo">
+    <footer>版权所有：张荣翔 2003~2023</footer>
+    <footer>2023 - 5 - 22</footer>
+</div>
+</html>
